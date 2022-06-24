@@ -14,5 +14,9 @@ def home():
 def about():
     return render_template('about.html', posts=src.post.post_list, title="About Us")
 
+@app.route('/inheritance')
+def inherit():
+    return render_template('inheritance.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

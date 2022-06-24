@@ -11,6 +11,9 @@
     {% endif %}
 </head>
 <body>
+    {% extends "Inheritance.html" %}
+    {% block content %}
+    <!-- content to be Inherited -->
     {% for posts in posts %}
 
     <h1>{{ posts.Project }}</h1>
@@ -18,5 +21,6 @@
     <p>Date Published: {{ posts.Date }}</p>
 
     {% endfor %}
+    {% endblock content %}
 </body>
 </html>
